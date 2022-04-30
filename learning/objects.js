@@ -16,7 +16,7 @@
 const player = {
     name: "adam",
     points: 10,
-    fat: true,
+    fat: true
 };
 
 console.log(player.name, player.points);
@@ -29,3 +29,5 @@ console.log(player);
 player.lastName = "potato";
 console.log(player);
 // 2.6
+player.points = player.points + 5;
+console.log(player);
