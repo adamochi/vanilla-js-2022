@@ -1,36 +1,35 @@
 function sayHello(nameOfPeron, age) {
-    console.log("Hello my name is " + nameOfPeron + " and I'm " + age);
+  console.log("Hello my name is " + nameOfPeron + " and I'm " + age);
 }
 
 sayHello("adam", 34);
 sayHello("chloe", 14);
 
-
 function plus(firstNumber, secondNumber) {
-    console.log(firstNumber + secondNumber);
+  console.log(firstNumber + secondNumber);
 }
 function divide(a, b) {
-    console.log(a / b);
+  console.log(a / b);
 }
 plus(8, 60);
 divide(98, 20);
 
 const playa = {
-    name: "adam",
-    sayHelloo: function (otherPersonsName){
-        console.log("hello " + otherPersonsName + " nice to meet you");
-    }
-}
+  name: "adam",
+  sayHelloo: function (otherPersonsName) {
+    console.log("hello " + otherPersonsName + " nice to meet you");
+  },
+};
 
 console.log(playa.name);
 playa.sayHelloo("chloe");
 
 // ^^ have own console.log() | array.push() ^^
 function banana() {
-    console.log("ban" + "ana" + " party");
+  console.log("ban" + "ana" + " party");
 }
 
-// recap ii 
+// recap ii
 // need to add () to press play on the function
 banana();
 banana();
@@ -46,7 +45,6 @@ plus();
 plus();
 plus();
 
-
 // we leart how to send data to functions before we learned how to receive data from functions
 
 // need to be able to send data to functions
@@ -54,18 +52,22 @@ plus(4, 5);
 plus(987.99, 202.01);
 
 const calculator = {
-    add: function (a, b) {
-//  console.log(a + b);
+  add: function (a, b) {
+    //  console.log(a + b);
     return a + b;
-},  minus: function (a, b) {
+  },
+  minus: function (a, b) {
     return a - b;
-},  times: function (a, b) {
+  },
+  times: function (a, b) {
     return a * b;
-},  divide: function (a, b) {
+  },
+  divide: function (a, b) {
     return a / b;
-},  power: function (a, b) {
+  },
+  power: function (a, b) {
     return a ** b;
-}
+  },
 };
 
 calculator.add(5, 100);
@@ -76,11 +78,10 @@ calculator.power(645, 3);
 // The actual value is undefined
 console.log(calculator.add(3, 5)); // <-- undefined
 
-
 // The thing is we didn't return the value
 let foreignerAge = 96;
 function calculateKrAge(ageOfForeigner) {
-    return foreignerAge + 2;
+  return foreignerAge + 2;
 }
 // what you are doing is now when someone presses play to the function, you are replacing the line after = with the result of it
 const krAge = calculateKrAge(foreignerAge);
