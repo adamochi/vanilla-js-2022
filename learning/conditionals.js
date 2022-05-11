@@ -1,14 +1,14 @@
 // age calculator if else, can i drink or not
 
 // const age = prompt("how old are you?");
-// javascript is basically paused because of this, and is one of the reasons we don't use prompt anymore. it's a very old way to get a value.
+// javascript is basically paused because of prompt, and is one of the reasons we don't use prompt anymore. it's a very old way to get a value.
 
 const age = parseInt(prompt("how old are you?"));
-
-// how to take one type and turn it into another. string to integer
-
+// Here we added parseInt(). It's how to take one type and turn it into another. string to integer
 console.log(typeof age);
-// it is just default that it is a string.
+// it is just default that it is a string. So use parseInt().
+// if I parseInt("hello"); I will get NaN
+
 console.log(typeof "15", typeof parseInt("15"));
 console.log(age, parseInt(age));
 // we cannot check if a string number is more or less than something, this will allow us to have a number
@@ -39,6 +39,7 @@ if (isNaN(age) || age < 0) {
   console.log("You can do whatever you want");
 }
 // if you use === to check for literal equality, you will get the > 80 result because the conditions overlap. So move the condition of === 100 up.
-
-// can compound conditionals and make as complex as you want:
-// if ((a && b) || (a && b) || (a && b)) {}
+/*
+ can compound conditionals and make as complex as you want:
+ if ((a && b) || (a && b) || (a && b)) {}
+*/

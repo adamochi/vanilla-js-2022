@@ -1,7 +1,8 @@
+// We use functions to encapsulate a piece of code
 function sayHello(nameOfPeron, age) {
   console.log("Hello my name is " + nameOfPeron + " and I'm " + age);
 }
-
+// To run a function use () parentheses
 sayHello("adam", 34);
 sayHello("chloe", 14);
 
@@ -13,7 +14,7 @@ function divide(a, b) {
 }
 plus(8, 60);
 divide(98, 20);
-
+// plus is not readily accessible variable until you put inside of the {body} of the function. it will say not defined.
 const playa = {
   name: "adam",
   sayHelloo: function (otherPersonsName) {
@@ -31,7 +32,7 @@ function banana() {
 
 // recap ii
 // need to add () to press play on the function
-banana();
+banana(); // argument goes here);
 banana();
 banana();
 banana();
@@ -69,7 +70,8 @@ const calculator = {
     return a ** b;
   },
 };
-
+// RETURN - I want the my function to give me the result of the function in the code.
+// The value of console.log and alert is an UNDEFINED value. Return has a value. So that's how you get a result.
 calculator.add(5, 100);
 calculator.minus(100, 70);
 calculator.divide(5, 10);
@@ -77,8 +79,8 @@ calculator.power(645, 3);
 // what is the value of plus. after plessing play on the plus function, what is the value?
 // The actual value is undefined
 console.log(calculator.add(3, 5)); // <-- undefined
-
 // The thing is we didn't return the value
+// To get the result and use it in my code need to use return.
 let foreignerAge = 96;
 function calculateKrAge(ageOfForeigner) {
   return foreignerAge + 2;
@@ -102,3 +104,27 @@ const powerResult = calculator.power(divideResult, minusResult);
 
 console.log(minusResult, powerResult, timesResult, divideResult);
 // I have acces to all these results because our functions will return something
+
+function potat(a, b, c, d, e, f) {
+  return "you requested " + a + b + c + d + e + f;
+}
+
+potat("kimchi ", "to ", "be ", "put ", "on the ", "BBQ");
+
+console.log(potat());
+
+// null stands for nothingness but is something we are going to literally say here there is nothing, and nothing is something
+
+// undefined is when you don't give any values to a constant or let
+
+// to make an array, all you need to write is[]
+const months = ["jan", "feb"];
+months.push("mar");
+console.log(months);
+console.log(months[1]);
+months[1] = "february"; // this will  replace a value
+console.log(months);
+// push will add a value
+// how many arguments a function can receive can be zero. The maximum number of arguments (and corresponding parameters) is 253 for a single function.
+
+// AFTER RETURNING A VALUE, YOUR FUNCTION FINISHES, if if write console.log() after the return, it will not show anything in the console. anything after return will never run.
