@@ -10,6 +10,7 @@
   <body>
     <form id="numberGame">
       <h1>Random Number Game</h1>
+      <h2>Try to beat my AI ヾ(•ω•`)o</h2>
 
       <span class="instruction">Generate a number between 0 and</span>
 
@@ -21,18 +22,24 @@
       />
       <div>
         <span class="guess-text">Guess the Number:</span>
-        <input class="guess" required type="number" />
+        <input
+          placeholder="type your guess here"
+          class="guess"
+          required
+          type="number"
+        />
         <button>Play!</button>
       </div>
     </form>
     <h2 class="random-number">The Number is:</h2>
     <div class="confirmation">
       <span class="you-chose">You Chose: </span>
-      <span class="machine-chose">The Machine Chose: </span>
+      <span class="machine-chose">The AI Chose: </span>
     </div>
 
     <h2 class="hidden">You Win!╰(*°▽°*)╯</h2>
     <h2 class="hidden-lose">You lose :(</h2>
+    <h2 class="double-win">Double Winners! ¯\_(ツ)_/¯</h2>
 
     <script src="src/app.js"></script>
   </body>

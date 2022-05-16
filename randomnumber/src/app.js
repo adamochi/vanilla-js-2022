@@ -6,6 +6,7 @@ const machineChose = document.querySelector(".machine-chose");
 const randomDisplay = document.querySelector(".random-number");
 const winDisplay = document.querySelector(".hidden");
 const loseDisplay = document.querySelector(".hidden-lose");
+const doubleWin = document.querySelector(".double-win");
 
 if (localStorage !== null) {
   localStorage.clear();
@@ -43,34 +44,36 @@ numberForm.addEventListener("submit", myMegaSexyRandomHandler.randomNumberfun);
 numberForm.addEventListener("submit", myMegaSexyRandomHandler.guessSubmitted);
 numberForm.addEventListener("submit", myMegaSexyRandomHandler.machineChoice);
 
-const maxRangeResult = localStorage.getItem("maxRange");
-
 function playIt() {
-  const maxRange = localStorage.getItem("maxRange");
   const randomNumber = localStorage.getItem("randomNumber");
   const guessedNumber = localStorage.getItem("guessedNumber");
   const aiChoice = localStorage.getItem("aiChoice");
   //   console.log(maxRange, randomNumber, guessedNumber, aiChoice);
   if (guessedNumber === randomNumber && aiChoice === randomNumber) {
     console.log("double winners");
+    doubleWin.classList.remove("double-win");
   } else if (guessedNumber === randomNumber) {
     console.log("winna");
     winDisplay.classList.remove("hidden");
     loseDisplay.classList.add("hidden-lose");
+    doubleWin.classList.add("double-win");
   } else if (aiChoice === randomNumber) {
     console.log("loser");
     winDisplay.classList.add("hidden");
     loseDisplay.classList.remove("hidden-lose");
+    doubleWin.classList.add("double-win");
   } else if (guessedNumber !== randomNumber) {
     console.log("keep partying");
     loseDisplay.classList.add("hidden-lose");
     winDisplay.classList.add("hidden");
+    doubleWin.classList.add("double-win");
   } else if (aiChoice !== randomNumber) {
     loseDisplay.classList.add("hidden-lose");
   }
 }
 
 numberForm.addEventListener("submit", playIt);
+
 //   if (guessedNumber === randomNumbe && guessedNumber !== randomNumber) {
 //     winDisplay.classList.remove("hidden");
 //   } else if (aiChoice === randomNumber) {

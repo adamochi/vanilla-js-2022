@@ -10,6 +10,9 @@ body {
 .hidden-lose {
   display: none;
 }
+.double-win {
+  display: none;
+}
 .instruction {
   font-size: 20px;
 }
