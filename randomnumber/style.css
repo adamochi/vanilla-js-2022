@@ -1,0 +1,9 @@
+.hidden {
+  display: none;
+}
+.hidden-lose {
+  display: none;
+}
+.instruction {
+  font-size: 20px;
+}
