@@ -10,12 +10,27 @@
   <body>
     <form id="numberGame">
       <h1>Random Number Game</h1>
+
       <span class="instruction">Generate a number between 0 and</span>
-      <input required type="number" placeholder="choose maximum range" />
-      <span class="instruction-two">Guess the Number:</span>
-      <input type="number" />
-      <button>Play!</button>
+
+      <input
+        class="range"
+        required
+        type="number"
+        placeholder="choose maximum range"
+      />
+      <div>
+        <span class="guess-text">Guess the Number:</span>
+        <input class="guess" required type="number" />
+        <button>Play!</button>
+      </div>
     </form>
+    <h2 class="random-number">The Number is:</h2>
+    <div class="confirmation">
+      <span class="you-chose">You Chose: </span>
+      <span class="machine-chose">The Machine Chose: </span>
+    </div>
+
     <h2 class="hidden">You Win!╰(*°▽°*)╯</h2>
     <h2 class="hidden-lose">You lose :(</h2>
 
