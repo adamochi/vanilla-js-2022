@@ -11,23 +11,28 @@
     <form id="numberGame">
       <h1>Random Number Game</h1>
       <h2>Try to beat my AI ヾ(•ω•`)o</h2>
+      <div>
+        <span class="instruction">Generate a number between 0 and</span>
 
-      <span class="instruction">Generate a number between 0 and</span>
-
-      <input
-        class="range"
-        required
-        type="number"
-        placeholder="choose maximum range"
-      />
+        <input
+          min="1"
+          class="range"
+          required
+          type="number"
+          placeholder="choose maximum range"
+        />
+      </div>
       <div>
         <span class="guess-text">Guess the Number:</span>
         <input
+          min="1"
           placeholder="type your guess here"
           class="guess"
           required
           type="number"
         />
+      </div>
+      <div>
         <button>Play!</button>
       </div>
     </form>

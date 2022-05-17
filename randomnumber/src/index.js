@@ -34,7 +34,7 @@ const myMegaSexyRandomHandler = {
   machineChoice: function (event) {
     const aiChoice = Math.ceil(Math.random() * numberRange.value);
     localStorage.setItem("aiChoice", aiChoice);
-    machineChose.innerText = "The Machine Chose: " + aiChoice;
+    machineChose.innerText = "The AI Chose: " + aiChoice;
     return aiChoice;
   },
 };
