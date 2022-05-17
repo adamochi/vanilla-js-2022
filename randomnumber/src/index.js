@@ -26,13 +26,13 @@ const myMegaSexyRandomHandler = {
     return guessedNumber;
   },
   randomNumberfun: function (event) {
-    const randomNumber = Math.floor(Math.random() * numberRange.value);
+    const randomNumber = Math.ceil(Math.random() * numberRange.value);
     localStorage.setItem("randomNumber", randomNumber);
     randomDisplay.innerText = "The Number is: " + randomNumber;
     return randomNumber;
   },
   machineChoice: function (event) {
-    const aiChoice = Math.floor(Math.random() * numberRange.value);
+    const aiChoice = Math.ceil(Math.random() * numberRange.value);
     localStorage.setItem("aiChoice", aiChoice);
     machineChose.innerText = "The Machine Chose: " + aiChoice;
     return aiChoice;
@@ -52,6 +52,7 @@ function playIt() {
   if (guessedNumber === randomNumber && aiChoice === randomNumber) {
     console.log("double winners");
     doubleWin.classList.remove("double-win");
+    loseDisplay.classList.add("hidden-lose");
   } else if (guessedNumber === randomNumber) {
     console.log("winna");
     winDisplay.classList.remove("hidden");
