@@ -7,6 +7,7 @@ const randomDisplay = document.querySelector(".random-number");
 const winDisplay = document.querySelector(".hidden");
 const loseDisplay = document.querySelector(".hidden-lose");
 const doubleWin = document.querySelector(".double-win");
+const keepGoing = document.querySelector(".keep-going");
 
 if (localStorage !== null) {
   localStorage.clear();
@@ -53,16 +54,24 @@ function playIt() {
     console.log("double winners");
     doubleWin.classList.remove("double-win");
     loseDisplay.classList.add("hidden-lose");
+    keepGoing.classList.add("keep-going");
   } else if (guessedNumber === randomNumber) {
     console.log("winna");
     winDisplay.classList.remove("hidden");
     loseDisplay.classList.add("hidden-lose");
     doubleWin.classList.add("double-win");
+    keepGoing.classList.add("keep-going");
   } else if (aiChoice === randomNumber) {
     console.log("loser");
     winDisplay.classList.add("hidden");
     loseDisplay.classList.remove("hidden-lose");
     doubleWin.classList.add("double-win");
+    keepGoing.classList.add("keep-going");
+  } else if (guessedNumber !== randomNumber && aiChoice !== randomNumber) {
+    doubleWin.classList.add("double-win");
+    loseDisplay.classList.add("hidden-lose");
+    winDisplay.classList.add("hidden");
+    keepGoing.classList.remove("keep-going");
   } else if (guessedNumber !== randomNumber) {
     console.log("keep partying");
     loseDisplay.classList.add("hidden-lose");

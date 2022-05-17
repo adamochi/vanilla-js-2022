@@ -8,44 +8,56 @@
     <title>Random Number Game</title>
   </head>
   <body>
-    <form id="numberGame">
-      <h1>Random Number Game</h1>
-      <h2>Try to beat my AI ヾ(•ω•`)o</h2>
-      <div>
-        <span class="instruction">Generate a number between 0 and</span>
+    <div id="main">
+      <h1 class="rand">Random</h1>
+      <h1 class="numb">Number</h1>
+      <h1 class="gam">Game</h1>
+      <h2 class="try">Try to beat my A.I. ヾ(•ω•`)o</h2>
+      <form id="numberGame">
+        <div class="input-divs">
+          <div class="input-text-above">
+            <span class="instruction">Generate a number between 0 and</span>
+          </div>
 
-        <input
-          min="1"
-          class="range"
-          required
-          type="number"
-          placeholder="choose maximum range"
-        />
+          <input
+            min="1"
+            max="100"
+            class="range"
+            required
+            type="number"
+            placeholder="choose maximum range"
+          />
+        </div>
+        <div class="input-divs">
+          <span class="guess-text">Guess the Number:</span>
+          <input
+            min="1"
+            max="100"
+            placeholder="type your guess here"
+            class="guess"
+            required
+            type="number"
+          />
+        </div>
+        <div class="play-button-div">
+          <button>Play!</button>
+        </div>
+      </form>
+      <h2 class="random-number">The Number is:</h2>
+      <div class="confirmation">
+        <span class="you-chose">You Chose: </span>
+        <span class="machine-chose">The AI Chose: </span>
       </div>
-      <div>
-        <span class="guess-text">Guess the Number:</span>
-        <input
-          min="1"
-          placeholder="type your guess here"
-          class="guess"
-          required
-          type="number"
-        />
-      </div>
-      <div>
-        <button>Play!</button>
-      </div>
-    </form>
-    <h2 class="random-number">The Number is:</h2>
-    <div class="confirmation">
-      <span class="you-chose">You Chose: </span>
-      <span class="machine-chose">The AI Chose: </span>
+
+      <span class="keep-going">play again, no winners yet</span>
+      <h2 class="hidden">You Win!╰(*°▽°*)╯</h2>
+      <h2 class="hidden-lose">You lose :(</h2>
+      <h2 class="double-win">Double Winners! ¯\_(ツ)_/¯</h2>
     </div>
-
-    <h2 class="hidden">You Win!╰(*°▽°*)╯</h2>
-    <h2 class="hidden-lose">You lose :(</h2>
-    <h2 class="double-win">Double Winners! ¯\_(ツ)_/¯</h2>
-
+    <script
+      src="https://kit.fontawesome.com/a7199961f0.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="src/index.js"></script>
   </body>
 </html>
