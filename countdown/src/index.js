@@ -22,16 +22,9 @@ function getDate() {
   console.log(now.getMinutes());
   console.log(now.getSeconds());
 */
-  const cHours = String(christmasEve.getHours() - now.getHours()).padStart(
-    3,
-    "0"
-  );
-  const cMinutes = String(
-    christmasEve.getMinutes() - now.getMinutes()
-  ).padStart(2, "0");
-  const cSeconds = String(
-    christmasEve.getSeconds() - now.getSeconds()
-  ).padStart(2, "0");
+  const cHours = String(christmasEve.getHours() - now.getHours()).padStart(3, "0");
+  const cMinutes = String(christmasEve.getMinutes() - now.getMinutes()).padStart(2, "0");
+  const cSeconds = String(christmasEve.getSeconds() - now.getSeconds()).padStart(2, "0");
 
   clockTitle.innerText = `${days}d ${cHours}h ${cMinutes}m ${cSeconds}s`;
 }
@@ -39,4 +32,3 @@ getDate();
 setInterval(getDate, 1000);
 
 // christmas eve = 25dec - date.now()
-// To test a function and get back its return
