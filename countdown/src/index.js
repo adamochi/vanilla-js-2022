@@ -1,19 +1,42 @@
 const clockTitle = document.querySelector(".js-clock");
 
-// date.getFullYear;
-// date.getHours;
-// date.getMinutes;
-// date.getSeconds;
-// date.getMilliseconds;
+const seconds = Math.floor(Date.now() / 1000);
 
 function getDate() {
-  const date = new Date();
-  const days = String(date.getDay()).padStart(3, "0");
-  const hours = String(date.getHours()).padStart(2, "0");
-  const minutes = String(date.getMinutes()).padStart(2, "0");
-  const seconds = String(date.getSeconds()).padStart(2, "0");
-  const milliseconds = String(date.getMilliseconds()).padStart(4, "0");
-  clockTitle.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s ${milliseconds}ms`;
+  const christmasEve = new Date("December 24, 2022 23:59:59");
+  const now = new Date();
+  const countdown = christmasEve - now;
+  const seconds = Math.floor(countdown / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  const days = Math.floor(hours / 24);
+  /*
+  console.log(days);
+  console.log(christmasEve.getFullYear());
+  console.log(christmasEve.getDay());
+  console.log(christmasEve.getHours());
+  console.log(christmasEve.getMinutes());
+  console.log(christmasEve.getSeconds());
+  console.log(now.getFullYear());
+  console.log(now.getHours());
+  console.log(now.getMinutes());
+  console.log(now.getSeconds());
+*/
+  const cHours = String(christmasEve.getHours() - now.getHours()).padStart(
+    3,
+    "0"
+  );
+  const cMinutes = String(
+    christmasEve.getMinutes() - now.getMinutes()
+  ).padStart(2, "0");
+  const cSeconds = String(
+    christmasEve.getSeconds() - now.getSeconds()
+  ).padStart(2, "0");
+
+  clockTitle.innerText = `${days}d ${cHours}h ${cMinutes}m ${cSeconds}s`;
 }
 getDate();
-setInterval(getDate, 1);
+setInterval(getDate, 1000);
+
+// christmas eve = 25dec - date.now()
+// To test a function and get back its return
