@@ -50,7 +50,7 @@ const author = document.querySelector("#quotes span:last-child");
 // console.log(quotes[0]);
 
 const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-console.log(randomQuote);
+// console.log(randomQuote);
 
 quote.innerText = randomQuote.quote;
 author.innerText = randomQuote.author;
