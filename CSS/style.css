@@ -73,6 +73,7 @@ body img {
   display: flex;
   top: 60%;
   font-size: 30px;
+  font-weight: 600;
   padding: 15px;
   width: fit-content;
   border-bottom: 2px solid pink;
@@ -117,10 +118,13 @@ body img {
   right: 3%;
   border: none;
   background: rgba(0, 0, 0, 0);
-  border-bottom: 2px solid pink;
+  border-bottom: 1px solid pink;
   border-radius: 5px;
   text-align: center;
   color: white;
+}
+#todo-form input::placeholder {
+  color: rgb(255, 255, 255);
 }
 #nomadcoders_link {
   position: absolute;
@@ -165,6 +169,6 @@ body img {
 @media screen and (orientation: portrait) {
   body img {
     height: 100%;
-    width: fit-content;
+    width: auto;
   }
 }
