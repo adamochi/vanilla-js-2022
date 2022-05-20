@@ -23,6 +23,7 @@ function paintGreetings(username) {
   // greeting.innerText = "Hello " + username;
   greeting.innerText = `Hello ${username}`;
   greeting.classList.remove(HIDDEN_CLASSNAME);
+  loginInput.classList.add(HIDDEN_CLASSNAME);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -34,6 +35,7 @@ if (savedUsername === null) {
 } else {
   // show the greeting
   paintGreetings(savedUsername);
+  loginInput.classList.add(HIDDEN_CLASSNAME);
 }
 
 /*

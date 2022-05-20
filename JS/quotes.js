@@ -2,7 +2,7 @@ const quotes = [
   {
     quote:
       "The more you sweat in times of peace, the less you bleed in times of war.",
-    author: "must be someone",
+    author: "Norman Schwarzkopf",
   },
   {
     quote: "When you reach the end of your rope, tie a knot in it and hang on.",
