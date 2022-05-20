@@ -22,13 +22,18 @@
 
     <h1 id="greeting" class="hidden"></h1>
 
-    <a target="_blank" href="https://nomadcoders.co">Nomad Coders</a>
+    <a id="nomadcoders_link" target="_blank" href="https://nomadcoders.co"
+      >Nomad Coders</a
+    >
 
     <form id="todo-form">
-      <input type="text" placeholder="write a To Do and Press Enter" />
+      <input type="text" placeholder="Write a To Do and Press Enter" />
     </form>
 
-    <ul id="todo-list"></ul>
+    <div id="toodoo">
+      <span>Today's Goals</span>
+      <ul id="todo-list">
+    </div>
 
     <div id="quotes">
       <span></span>
@@ -40,6 +45,10 @@
       <span></span>
     </div>
 
+    <script
+    src="https://kit.fontawesome.com/a7199961f0.js"
+    crossorigin="anonymous"
+  ></script>
     <script src="JS/greeting.js"></script>
     <script src="JS/clock.js"></script>
     <script src="js/quotes.js"></script>
