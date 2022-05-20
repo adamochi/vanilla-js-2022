@@ -126,10 +126,17 @@ body img {
 #todo-form input::placeholder {
   color: rgb(255, 255, 255);
 }
-#nomadcoders_link {
+#links {
   position: absolute;
-  top: 3%;
-  right: 3%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  top: 2%;
+  right: 2%;
+  padding: 10px;
+}
+#nLink {
+  margin: 0px 10px;
   text-decoration: none;
   font-weight: 600;
   color: rgb(255, 149, 0);
@@ -137,7 +144,18 @@ body img {
   border-radius: 15px;
   padding: 5px;
 }
-#nomadcoders_link:hover {
+.game_link {
+  margin: 0px 10px;
+  text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(17, 0, 255);
+  background-color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+#nLink:hover,
+.game_link:hover {
   will-change: auto;
   transform: scale(120%) translateY(-2px);
   transition: transform 0.05s ease-in-out;
