@@ -42,14 +42,14 @@ body img {
 #weather {
   font-size: 1.3rem;
   color: white;
-  background-color: rgba(0, 0, 0, 0.199);
+  background-color: rgba(0, 0, 0, 0.3);
   width: fit-content;
   height: fit-content;
   border-radius: 5px;
   display: flex;
   position: absolute;
-  left: 1rem;
-  top: 0.5rem;
+  left: 1%;
+  top: 1%;
 }
 #weather span {
   width: fit-content;
@@ -101,6 +101,11 @@ body img {
   text-align: center;
 }
 #quotes {
+  background-color: rgba(0, 0, 0, 0.199);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
+  padding: 5px;
   font-size: 16px;
   font-weight: 400;
   color: rgb(255, 255, 255);
@@ -161,6 +166,10 @@ body img {
   transition: transform 0.05s ease-in-out;
 }
 #toodoo {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
   text-align: right;
   position: absolute;
   display: flex;
