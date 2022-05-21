@@ -12,4 +12,4 @@ const bgImage = document.createElement("img");
 bgImage.src = `images/${chosenImage}`;
 
 document.body.appendChild(bgImage);
-console.dir(document.body.main);
+// console.dir(document.body.main);

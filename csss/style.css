@@ -1,5 +1,5 @@
 @import "reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,500;8..144,600&family=Whisper&display=swap");
 
 .hidden {
   display: none;
@@ -61,10 +61,12 @@ body img {
 
 .js-clock {
   position: absolute;
-  top: 45%;
+  top: 34%;
   color: rgb(84, 207, 255);
-  font-size: 40px;
-  font-family: "Press Start 2P", cursive;
+  font-size: 90px;
+  font-family: "Roboto Flex", sans-serif;
+  /*200, 500, 600*/
+  font-weight: 600;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 5px;
   padding-top: 11px;
@@ -72,16 +74,18 @@ body img {
 }
 
 #greeting {
-  color: rgb(174, 255, 255);
+  color: rgb(255, 255, 255);
   position: absolute;
   display: flex;
-  top: 60%;
-  font-size: 30px;
+  top: 50%;
+  font-size: 60px;
   font-weight: 600;
-  padding: 15px;
+  border-bottom: 2px solid rgb(62, 75, 255);
+  border-radius: 20%;
+  height: 45px;
+  font-family: "Whisper", cursive;
+  padding: 5px 10px;
   width: fit-content;
-  border-bottom: 2px solid pink;
-  border-radius: 50%;
 }
 #login-form {
   background-color: rgba(0, 0, 0, 0.4);
