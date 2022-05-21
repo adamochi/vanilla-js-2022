@@ -255,3 +255,9 @@ body img {
     bottom: 16%;
   }
 }
+@media screen and (orientation: portrait) {
+  body img {
+    height: 100%;
+    width: auto;
+  }
+}
