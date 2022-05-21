@@ -93,7 +93,7 @@ body img {
   height: fit-content;
   border-radius: 5px;
   position: absolute;
-  top: 35%;
+  top: 50%;
   display: inline;
 }
 #login-form input {
@@ -127,12 +127,16 @@ body img {
   display: flex;
   flex-direction: column;
 }
+#todo-form {
+  display: flex;
+  justify-content: center;
+}
 #todo-form input {
   position: absolute;
+  display: flex;
   font-size: 16px;
   width: 220px;
-  bottom: 3%;
-  right: 3%;
+  bottom: 14%;
   border: none;
   background-color: rgba(0, 0, 0, 0.199);
   height: 25px;
@@ -216,9 +220,25 @@ body img {
   margin: 5px 5px 5px 20px;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 960px) {
   body img {
     height: 100%;
     width: auto;
+  }
+}
+@media screen and (max-width: 553px) {
+  #links {
+    top: 4%;
+  }
+  #toodoo {
+    top: 10%;
+  }
+}
+@media screen and (max-height: 420px) {
+  .js-clock {
+    top: 30%;
+  }
+  #todo-form input {
+    bottom: 16%;
   }
 }
