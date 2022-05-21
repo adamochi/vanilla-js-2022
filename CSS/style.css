@@ -60,11 +60,15 @@ body img {
 }
 
 .js-clock {
-  color: rgb(0, 141, 207);
   position: absolute;
   top: 45%;
-  font-family: "Press Start 2P", cursive;
+  color: rgb(84, 207, 255);
   font-size: 40px;
+  font-family: "Press Start 2P", cursive;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 5px;
+  padding-top: 11px;
+  border-radius: 5px;
 }
 
 #greeting {
@@ -80,6 +84,10 @@ body img {
   border-radius: 50%;
 }
 #login-form {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 5px;
   position: absolute;
   top: 35%;
   display: inline;
@@ -88,7 +96,7 @@ body img {
   font-size: 20px;
   border: none;
   background: rgba(0, 0, 0, 0);
-  border-bottom: 2px solid pink;
+  border-bottom: 2px solid rgb(145, 0, 24);
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -122,8 +130,10 @@ body img {
   bottom: 3%;
   right: 3%;
   border: none;
-  background: rgba(0, 0, 0, 0);
-  border-bottom: 1px solid pink;
+  background-color: rgba(0, 0, 0, 0.199);
+  height: 25px;
+  border-radius: 5px;
+  border-bottom: 1px solid rgb(129, 0, 22);
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -144,9 +154,9 @@ body img {
   margin: 0px 10px;
   text-decoration: none;
   font-weight: 600;
-  color: rgb(255, 149, 0);
-  background-color: white;
-  border-radius: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   padding: 5px;
 }
 .game_link {
@@ -154,16 +164,25 @@ body img {
   text-decoration: none;
   text-decoration: none;
   font-weight: 600;
-  color: rgb(17, 0, 255);
-  background-color: white;
-  border-radius: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
   padding: 5px;
 }
 #nLink:hover,
 .game_link:hover {
+  color: rgb(255, 149, 0);
   will-change: auto;
   transform: scale(120%) translateY(-2px);
   transition: transform 0.05s ease-in-out;
+  background-color: aliceblue;
+}
+.game_link:hover {
+  color: rgb(17, 0, 255);
+  will-change: auto;
+  transform: scale(120%) translateY(-2px);
+  transition: transform 0.05s ease-in-out;
+  background-color: aliceblue;
 }
 #toodoo {
   background-color: rgba(0, 0, 0, 0.3);
