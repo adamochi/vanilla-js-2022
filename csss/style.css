@@ -1,4 +1,5 @@
 @import "reset.css";
+@import "animations.css";
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,500;8..144,600&family=Whisper&display=swap");
 
 .hidden {
