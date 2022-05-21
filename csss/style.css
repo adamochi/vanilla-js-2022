@@ -80,11 +80,11 @@ body img {
   top: 50%;
   font-size: 60px;
   font-weight: 600;
-  border-bottom: 2px solid rgb(62, 75, 255);
+  border-bottom: 2px solid rgb(84, 207, 255);
   border-radius: 20%;
   height: 45px;
   font-family: "Whisper", cursive;
-  padding: 5px 10px;
+  padding-bottom: 10px;
   width: fit-content;
 }
 #login-form {
@@ -100,7 +100,7 @@ body img {
   font-size: 20px;
   border: none;
   background: rgba(0, 0, 0, 0);
-  border-bottom: 2px solid rgb(145, 0, 24);
+  border-bottom: 2px solid rgb(84, 207, 255);
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -177,8 +177,19 @@ body img {
   border-radius: 5px;
   padding: 5px;
 }
+.portfolio_link {
+  margin: 0px 10px;
+  text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 5px;
+}
 #nLink:hover,
-.game_link:hover {
+.game_link:hover,
+.portfolio_link:hover {
   color: rgb(255, 149, 0);
   will-change: auto;
   transform: scale(120%) translateY(-2px);
@@ -188,9 +199,10 @@ body img {
 .game_link:hover {
   color: rgb(17, 0, 255);
   will-change: auto;
-  transform: scale(120%) translateY(-2px);
-  transition: transform 0.05s ease-in-out;
-  background-color: aliceblue;
+}
+.portfolio_link:hover {
+  color: rgb(0, 207, 121);
+  will-change: auto;
 }
 #toodoo {
   background-color: rgba(0, 0, 0, 0.3);
@@ -226,7 +238,7 @@ body img {
     width: auto;
   }
 }
-@media screen and (max-width: 553px) {
+@media screen and (max-width: 742px) {
   #links {
     top: 4%;
   }
