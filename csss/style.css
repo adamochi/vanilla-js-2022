@@ -1,5 +1,6 @@
 @import "reset.css";
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import "animations.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,500;8..144,600&family=Whisper&display=swap");
 
 .hidden {
   display: none;
@@ -34,6 +35,7 @@ body {
     rgb(255, 70, 101)
   );
   background-size: 1000%;
+  overflow: hidden;
 }
 body img {
   width: 100%;
@@ -61,10 +63,12 @@ body img {
 
 .js-clock {
   position: absolute;
-  top: 45%;
+  top: 34%;
   color: rgb(84, 207, 255);
-  font-size: 40px;
-  font-family: "Press Start 2P", cursive;
+  font-size: 90px;
+  font-family: "Roboto Flex", sans-serif;
+  /*200, 500, 600*/
+  font-weight: 600;
   background-color: rgba(0, 0, 0, 0.05);
   padding: 5px;
   padding-top: 11px;
@@ -72,16 +76,18 @@ body img {
 }
 
 #greeting {
-  color: rgb(174, 255, 255);
+  color: rgb(255, 255, 255);
   position: absolute;
   display: flex;
-  top: 60%;
-  font-size: 30px;
+  top: 50%;
+  font-size: 60px;
   font-weight: 600;
-  padding: 15px;
+  border-bottom: 2px solid rgb(84, 207, 255);
+  border-radius: 20%;
+  height: 45px;
+  font-family: "Whisper", cursive;
+  padding-bottom: 10px;
   width: fit-content;
-  border-bottom: 2px solid pink;
-  border-radius: 50%;
 }
 #login-form {
   background-color: rgba(0, 0, 0, 0.4);
@@ -89,14 +95,14 @@ body img {
   height: fit-content;
   border-radius: 5px;
   position: absolute;
-  top: 35%;
+  top: 50%;
   display: inline;
 }
 #login-form input {
   font-size: 20px;
   border: none;
   background: rgba(0, 0, 0, 0);
-  border-bottom: 2px solid rgb(145, 0, 24);
+  border-bottom: 2px solid rgb(84, 207, 255);
   border-radius: 5px;
   text-align: center;
   color: white;
@@ -123,12 +129,16 @@ body img {
   display: flex;
   flex-direction: column;
 }
+#todo-form {
+  display: flex;
+  justify-content: center;
+}
 #todo-form input {
   position: absolute;
+  display: flex;
   font-size: 16px;
   width: 220px;
-  bottom: 3%;
-  right: 3%;
+  bottom: 14%;
   border: none;
   background-color: rgba(0, 0, 0, 0.199);
   height: 25px;
@@ -169,8 +179,19 @@ body img {
   border-radius: 5px;
   padding: 5px;
 }
+.portfolio_link {
+  margin: 0px 10px;
+  text-decoration: none;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 5px;
+}
 #nLink:hover,
-.game_link:hover {
+.game_link:hover,
+.portfolio_link:hover {
   color: rgb(255, 149, 0);
   will-change: auto;
   transform: scale(120%) translateY(-2px);
@@ -180,9 +201,10 @@ body img {
 .game_link:hover {
   color: rgb(17, 0, 255);
   will-change: auto;
-  transform: scale(120%) translateY(-2px);
-  transition: transform 0.05s ease-in-out;
-  background-color: aliceblue;
+}
+.portfolio_link:hover {
+  color: rgb(0, 207, 121);
+  will-change: auto;
 }
 #toodoo {
   background-color: rgba(0, 0, 0, 0.3);
@@ -212,6 +234,28 @@ body img {
   margin: 5px 5px 5px 20px;
 }
 
+@media screen and (max-width: 960px) {
+  body img {
+    height: 100%;
+    width: auto;
+  }
+}
+@media screen and (max-width: 742px) {
+  #links {
+    top: 4%;
+  }
+  #toodoo {
+    top: 10%;
+  }
+}
+@media screen and (max-height: 420px) {
+  .js-clock {
+    top: 30%;
+  }
+  #todo-form input {
+    bottom: 16%;
+  }
+}
 @media screen and (orientation: portrait) {
   body img {
     height: 100%;
