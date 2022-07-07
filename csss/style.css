@@ -35,6 +35,7 @@ body {
     rgb(255, 70, 101)
   );
   background-size: 1000%;
+  overflow: hidden;
 }
 body img {
   width: 100%;
